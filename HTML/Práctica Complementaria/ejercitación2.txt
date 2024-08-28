@@ -1,0 +1,10 @@
+2.A) ¿Qué formatos soporta para audio?
+  MP3
+  WAV
+  Ogg Vorbis
+
+2.B) Crear un elemento de audio:
+<audio controls>
+  <source src="https://html5tutorial.info/media/vincent.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>

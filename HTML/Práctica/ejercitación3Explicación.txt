@@ -1,0 +1,148 @@
+3a) Enlaces (Links)
+
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+  Descripción: Es un enlace simple que redirige a Google.
+  Visualización: Un enlace de texto con la frase "Click aquí para ir a Google". Al hacer clic, se abre Google en la misma
+pestaña.
+
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+  Descripción: Similar al anterior, pero el atributo target="_blank" hace que el enlace se abra en una nueva pestaña o
+ventana.
+  Visualización: El texto es el mismo, pero al hacer clic, se abrirá Google en una nueva pestaña.
+
+<a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help"></a>
+  Descripción: Incluye atributos adicionales como type, hreflang, charset y rel, que especifican el tipo de documento,
+el idioma del enlace, la codificación de caracteres, y la relación del enlace, respectivamente. Sin embargo, falta el
+texto dentro del enlace.
+  Visualización: No se vería nada en la página porque el enlace no tiene texto visible.
+
+<a href="#">Click aquí para ir a Google</a>
+  Descripción: El href="#" crea un enlace que no redirige a ninguna parte.
+  Visualización: El enlace muestra "Click aquí para ir a Google", pero al hacer clic no lleva a ningún lado, solo se
+recarga la página.
+
+<a href="#arriba">Click aquí para volver arriba</a> <a name="arriba" id="arriba"></a>
+  Descripción: El enlace lleva al marcador arriba dentro de la misma página. El marcador se define con name="arriba" y
+id="arriba".
+  Visualización: El enlace "Click aquí para volver arriba" lleva al principio de la página o a la ubicación del marcador
+arriba.
+
+3b) Imágenes y Enlaces
+
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+  Descripción: Una imagen seguida de un enlace.
+  Visualización: La imagen se muestra seguida del texto "Click aquí". Al hacer clic en "Click aquí", se abre Google.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+  Descripción: La imagen es parte del enlace.
+  Visualización: Al hacer clic en la imagen, se abre Google. El texto "Click aquí" aparece después de la imagen.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+  Descripción: La imagen y el texto "Click aquí" son parte del enlace.
+  Visualización: Tanto la imagen como el texto "Click aquí" son clicables, y ambos llevan a Google.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p>
+  Descripción: Hay dos enlaces separados, uno en la imagen y otro en el texto.
+  Visualización: La imagen y el texto "Click aquí" son enlaces independientes, pero ambos llevan a Google.
+
+3c) Listas
+
+Lista desordenada (<ul>):
+  Descripción: Lista con viñetas, donde los elementos son xxx, yyy, zzz.
+  Visualización: Se muestra una lista con viñetas para cada elemento.
+
+Lista ordenada (<ol>):
+  Descripción: Lista numerada, donde los elementos son xxx, yyy, zzz.
+  Visualización: Se muestra una lista numerada, con cada elemento teniendo un número (1, 2, 3).
+
+Lista ordenada con elementos individuales:
+  Descripción: Se muestra una lista numerada, pero con cada elemento en su propia lista con un valor específico.
+  Visualización: Tres listas independientes, la primera con "1. xxx", la segunda con "2. yyy", y la tercera con "3. zzz".
+
+<blockquote>:
+  Descripción: Un bloque de texto citado que contiene una lista numerada simulada con HTML simple.
+  Visualización: Se muestra un bloque con "1. xxx 2. yyy 3. zzz" como texto plano, no una lista propiamente dicha.
+
+3d) Tablas simples
+
+Tabla con etiquetas <th> para encabezados:
+  Descripción: La primera fila tiene encabezados de columna (<th>).
+  Visualización: Una tabla con encabezados en la primera fila ("Columna 1", "Columna 2").
+
+Tabla con contenido centrado:
+  Descripción: Similar a la anterior, pero el contenido de las celdas está centrado utilizando <div align="center">.
+  Visualización: Una tabla donde los encabezados están centrados dentro de sus celdas.
+
+3e) Títulos y tablas
+
+<caption> con un título incorrectamente estructurado:
+  Descripción: El código intenta incluir una tabla dentro de otra tabla, lo cual no es correcto.
+  Visualización: La visualización puede variar según el navegador, pero en general, la tabla será malformada y el título podría no aparecer correctamente.
+
+<td colspan="3"> con título centrado:
+  Descripción: Un método para centrar un título utilizando colspan="3" para combinar celdas.
+  Visualización: La tabla tendrá un título centrado que ocupa las tres celdas superiores.
+
+3f) Tablas con rowspan y colspan
+
+Uso de rowspan para combinar filas:
+  Descripción: Combina celdas verticalmente con rowspan="2".
+  Visualización: La primera celda de la tabla ocupa dos filas.
+
+Uso de colspan para combinar columnas:
+  Descripción: La primera fila tiene una celda que ocupa dos columnas y otra celda.
+  Visualización: La tabla tiene celdas que se extienden horizontalmente, fusionando columnas.
+
+3g) Tablas con cellspacing y cellpadding
+
+Tabla básica con bordes:
+  Descripción: Usa border="1" para dibujar bordes, colspan="3" para combinar celdas, y rowspan="2" para combinar filas.
+  Visualización: La tabla tiene bordes visibles y celdas fusionadas vertical y horizontalmente.
+
+Tabla con cellspacing y cellpadding:
+  Descripción: Especifica espacios entre celdas y relleno interno (cellspacing y cellpadding).
+  Visualización: Similar a la anterior pero con ajustes en el espacio entre las celdas y el relleno interno.
+
+3h) Formularios
+
+Formulario de login básico:
+  Descripción: Un formulario que usa el método post y abre en una nueva pestaña.
+  Visualización: Un formulario con campos de usuario y contraseña, y un botón de envío.
+
+Formulario con method="get":
+  Descripción: Similar al anterior, pero usa el método get y etiqueta <label>.
+  Visualización: Igual al anterior, pero el envío de datos se haría a través de la URL, visible en la barra del navegador.
+
+Formulario con mailto:
+  Descripción: Un formulario que intenta enviar los datos por correo utilizando mailto.
+  Visualización: Depende del cliente de correo configurado, pero es probable que abra una ventana de correo para enviar los datos.
+
+3i) Botones
+
+Botón con imagen:
+  Descripción: Un botón que incluye una imagen.
+  Visualización: Un botón que muestra una imagen con el texto "CLICK AQUÍ" debajo de la imagen.
+
+Botón de texto:
+  Descripción: Un botón de texto estándar.
+  Visualización: Un botón simple con el texto "CLICK AQUÍ".
+
+3j) Botones de radio
+
+Grupo de botones de radio con el mismo nombre:
+  Descripción: Dos botones de radio con el mismo name, formando un grupo donde solo se puede seleccionar uno.
+  Visualización: Un par de botones de radio donde solo uno se puede seleccionar a la vez.
+
+Grupo de botones de radio con nombres diferentes:
+  Descripción: Dos botones de radio con diferentes name, permitiendo seleccionar ambos simultáneamente.
+  Visualización: Dos botones de radio independientes, donde ambos se pueden seleccionar.
+
+3k) Listas de selección (<select>)
+
+Lista de selección simple:
+  Descripción: Un menú desplegable donde solo se puede seleccionar una opción.
+  Visualización: Un menú con dos opciones agrupadas.
+
+Lista de selección múltiple:
+  Descripción: Un menú donde se pueden seleccionar múltiples opciones a la vez.
+  Visualización: Un menú con selección múltiple permitida, donde se pueden seleccionar varias opciones simultáneamente.

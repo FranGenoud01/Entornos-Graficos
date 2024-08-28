@@ -1,0 +1,34 @@
+4.A) Formulario con un campo requerido:
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <input type="submit" value="Submit">
+</form>
+
+4.B) Formulario con un campo de tipo email y validar que funcione:
+<form>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <input type="submit" value="Submit">
+</form>
+
+4.C) Formulario con un campo de tipo fecha y validar que funcione:
+<form>
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="date" required>
+  <input type="submit" value="Submit">
+</form>
+
+4.D) Formulario con un campo de tipo color y validar que funcione:
+<form>
+  <label for="color">Color:</label>
+  <input type="color" id="color" name="color" required>
+  <input type="submit" value="Submit">
+</form>
+
+4.E) Formulario con un campo de tipo number y validar que funcione. Además configurar valores mínimos y máximos permitidos:
+<form>
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="100" required>
+  <input type="submit" value="Submit">
+</form>

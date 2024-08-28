@@ -1,0 +1,57 @@
+1. Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última? 
+HTML (HyperText Markup Language) es el lenguaje de marcado estándar para crear páginas web. Se utiliza para estructurar el contenido en la web, definiendo elementos como párrafos, encabezados, enlaces, imágenes, y más. Fue creado por Tim Berners-Lee en 1991, y es un componente fundamental de la World Wide Web.
+Versiones de HTML:
+    HTML 1.0 (1991): La primera versión, muy simple, que incluía solo las características básicas.
+    HTML 2.0 (1995): Formalizó las características de HTML 1.0 y añadió algunas nuevas.
+    HTML 3.2 (1997): Introdujo tablas, applets, y scripts.
+    HTML 4.0 (1997): Importante actualización que añadió soporte para hojas de estilo en cascada (CSS), mejor manejo de scripts, y nuevas características de accesibilidad.
+    HTML 4.01 (1999): Una versión revisada que corrigió errores y mejoró la especificación.
+    XHTML 1.0 (2000): Una reformulación de HTML 4.01 como una aplicación de XML, con reglas de sintaxis más estrictas.
+    HTML5 (2014): Una actualización importante que introdujo nuevas APIs, elementos como <video> y <audio>, soporte para gráficos y multimedia, y un modelo de scripting más robusto.
+
+Última versión: HTML5.2, que se lanzó en diciembre de 2017, aunque las versiones de HTML se mantienen en constante evolución con pequeños ajustes y mejoras a través de revisiones como HTML Living Standard, que es mantenida por WHATWG (Web Hypertext Application Technology Working Group).
+
+2. ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos con HTML? 
+El W3C (World Wide Web Consortium) recomienda seguir los siguientes principios básicos al crear documentos con HTML:
+    Semántica: Utilizar los elementos HTML para describir correctamente el significado del contenido (por ejemplo, usar <h1> para títulos principales, <p> para párrafos, etc.).
+    Accesibilidad: Asegurar que el contenido sea accesible para todos los usuarios, incluidas personas con discapacidades (por ejemplo, usando atributos alt en imágenes).
+    Separación de Contenido y Presentación: Utilizar CSS para la presentación visual y HTML para la estructura y el contenido.
+    Uso de Estándares: Seguir las especificaciones y guías establecidas por el W3C para asegurar la interoperabilidad y compatibilidad con diferentes navegadores y dispositivos.
+    Estructura y Orden: Crear una estructura clara y ordenada en el documento, utilizando etiquetas de forma jerárquica y lógica.
+
+3. En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado?  ¿y obsoleto? 
+Elemento o atributo desaprobado (deprecated): Se refiere a elementos o atributos que todavía están permitidos en HTML, pero que se desaconseja su uso porque están planeados para ser eliminados en futuras versiones. Generalmente, existen alternativas más modernas y recomendadas para estos elementos o atributos. Ejemplo: <font> es un elemento desaprobado en favor del uso de CSS para manejar la presentación del texto.
+
+Elemento o atributo obsoleto (obsolete): Un elemento o atributo obsoleto ya no está permitido en la especificación actual de HTML. No debe ser usado en ningún documento HTML y los navegadores modernos podrían no ofrecer soporte para estos elementos. Ejemplo: <blink> es un elemento obsoleto.
+
+4. Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01? 
+DTD (Document Type Definition) es una declaración que define la estructura y las reglas de un documento HTML o XML, incluyendo qué elementos y atributos están permitidos y en qué orden deben aparecer. Especifica la versión de HTML que se está utilizando y ayuda a los navegadores a interpretar correctamente el código.
+
+En HTML 4.01, se definen tres tipos de DTD:
+
+    HTML 4.01 Strict: Este DTD no permite el uso de elementos de presentación obsoletos, como <font> o <center>, promoviendo la separación entre estructura y presentación.
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+    HTML 4.01 Transitional: Permite el uso de elementos obsoletos para facilitar la transición de documentos HTML más antiguos a la versión HTML 4.01.
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+    HTML 4.01 Frameset: Se utiliza cuando un documento HTML está compuesto de varios marcos (frames).
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frames
+
+5. Qué son los metadatos y cómo se especifican en HTML?
+Metadatos son datos que describen otros datos, proporcionando información adicional sobre el contenido del documento HTML, como su autor, descripción, palabras clave, y cómo debe ser manejado por los navegadores.
+
+En HTML, los metadatos se especifican dentro del elemento <head> mediante el uso de la etiqueta <meta>. Ejemplos comunes incluyen:
+    Autor del documento:
+    <meta name="author" content="Nombre del autor">
+
+    Descripción del documento:
+    <meta name="description" content="Descripción del contenido del documento">
+
+    Palabras clave:
+    <meta name="keywords" content="HTML, metadatos, web">
+
+También se incluyen otros tipos de metadatos como el charset (conjunto de caracteres):
+<meta charset="UTF-8">
+
+Estos metadatos ayudan a los motores de búsqueda y navegadores a entender mejor el contenido del documento y a manejarlo de manera adecuada.

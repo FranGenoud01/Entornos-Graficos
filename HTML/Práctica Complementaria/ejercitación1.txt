@@ -1,0 +1,20 @@
+1. ¿Ventajas de HTML5?
+  Etiquetas semánticas que mejoran la estructura y SEO.
+  Soporte nativo para video y audio.
+  APIs para interactividad (Canvas, Geolocalización).
+  Compatible con dispositivos móviles.
+  Mejora el rendimiento general.
+
+2. ¿Por qué utilizarlo?
+  Es el estándar actual, compatible con todos los navegadores modernos.
+  Facilita la accesibilidad y mejora el SEO.
+  Permite agregar multimedia e interactividad sin plugins externos.
+  Soporta aplicaciones offline.
+  Acelera y simplifica el desarrollo web.
+
+3. Nombre ventajas
+  Funciona en múltiples dispositivos y navegadores.
+  Mejora el SEO.
+  Reduce la dependencia de plugins externos.
+  Ofrece interactividad avanzada.
+  Mejora la accesibilidad web.

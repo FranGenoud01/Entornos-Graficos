@@ -1,0 +1,10 @@
+3.A) ¿Qué formatos soporta para video?
+  MP4
+  WebM
+  Ogg Theora
+
+3.B) Crear un elemento de video:
+<video width="320" height="240" controls>
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>

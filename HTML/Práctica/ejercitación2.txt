@@ -1,0 +1,90 @@
+2a. 
+Sección del documento HTML: Se puede colocar en cualquier parte del documento HTML, pero generalmente se encuentra
+dentro de la sección <head> o <body>.
+Efecto: No produce ningún efecto visual en la página. Es un comentario en HTML, que sirve para dejar notas o
+descripciones en el código que no se mostrarán en el navegador.
+Elementos:
+  Etiqueta de comentario: <!-- ... -->
+Atributos: No aplica, ya que los comentarios no tienen atributos.
+
+2b.
+Sección del documento HTML: Generalmente se coloca dentro de la sección <body>, ya que <div> es un elemento de contenedor para agrupar bloques de contenido.
+Efecto: Crea un contenedor o bloque en la página que encapsula el contenido "Contenido del bloque1". El id permite identificar y aplicar estilos o comportamientos específicos a este contenedor.
+Elementos:
+  Etiqueta de apertura: <div>
+  Etiqueta de cierre: </div>
+  Contenido: Contenido del bloque1
+Atributos:
+  id (obligatorio para identificar este bloque en particular): id="bloque1"
+
+2c.
+Sección del documento HTML: Se coloca dentro de la sección <body>, ya que el elemento <img> se usa para insertar imágenes en la página.
+Efecto: Inserta una imagen en la página. Aunque src está vacío, normalmente contendría la URL de la imagen. El alt
+proporciona un texto alternativo que se muestra si la imagen no se puede cargar.
+Elementos:
+  Etiqueta de imagen: <img /> (Elemento vacío, sin etiqueta de cierre).
+Atributos:
+  src (obligatorio): src="" (Ruta de la imagen; aquí está vacío).
+  alt (obligatorio): alt="lugar imagen" (Texto alternativo).
+  id: id="im1" (Identificador único).
+  name: name="im1" (Nombre del elemento, usado para formularios o scripts).
+  width: width="32" (Ancho de la imagen en píxeles).
+  height: height="32" (Alto de la imagen en píxeles).
+  longdesc: longdesc="detalles.htm" (Enlace a una descripción larga de la imagen).
+
+2d.
+Sección del documento HTML: Se coloca dentro de la sección <head>, ya que <meta> se usa para proporcionar metadatos sobre el documento.
+Efecto: Define metadatos:
+  El primer <meta> especifica palabras clave que describen el contenido del documento, lo que puede ayudar a los motores de
+  búsqueda a indexar la página.
+  El segundo <meta> indica a los navegadores que el documento debe considerarse expirado después de la fecha y hora especificada.
+Elementos:
+  Etiqueta meta:
+  <meta /> (Elemento vacío, sin etiqueta de cierre).
+Atributos:
+  name: name="keywords" (Nombre del metadato).
+  lang: lang="es" (Lenguaje del contenido).
+  content (obligatorio): content="casa, compra, venta, alquiler" (Valor del metadato).
+  http-equiv: http-equiv="expires" (Encabezado HTTP).
+  content (obligatorio): content="16-Sep-2019 7:49 PM" (Fecha de expiración).
+
+2e.
+Sección del documento HTML: Se coloca dentro de la sección <body>, ya que <a> es un enlace que debe ser mostrado en la página.
+Efecto: Crea un enlace de texto "Resumen HTML" que, al ser clicado, lleva al usuario a http://www.e-style.com.ar/resumen.html. También especifica que el recurso está en español, el tipo de documento es HTML, el charset es utf-8, y es un enlace de ayuda.
+Elementos:
+  Etiqueta de apertura: <a>
+  Etiqueta de cierre: </a>
+  Contenido: Resumen HTML
+Atributos:
+  href (obligatorio): href="http://www.e-style.com.ar/resumen.html" (URL del destino).
+  type: type="text/html" (Tipo MIME del recurso vinculado).
+  hreflang: hreflang="es" (Idioma del documento vinculado).
+  charset: charset="utf-8" (Conjunto de caracteres del documento vinculado).
+  rel: rel="help" (Relación entre el documento actual y el documento vinculado).
+
+2f.
+Sección del documento HTML: Se coloca dentro de la sección <body>, ya que <table> es un elemento de contenido que muestra datos en una tabla.
+Efecto: Crea una tabla con un título, tres columnas (A, B, C) y dos filas numeradas (1º, 2º). Los valores de las celdas están vacíos (&nbsp;).
+Elementos:
+  Etiqueta de apertura de tabla: <table>
+  Etiqueta de cierre de tabla: </table>
+  Etiqueta de apertura de título de tabla: <caption>
+  Etiqueta de cierre de título de tabla: </caption>
+  Etiqueta de apertura de fila: <tr>
+  Etiqueta de cierre de fila: </tr>
+  Etiqueta de apertura de encabezado de columna: <th>
+  Etiqueta de cierre de encabezado de columna: </th>
+  Etiqueta de apertura de celda de datos: <td>
+  Etiqueta de cierre de celda de datos: </td>
+  Contenido:
+    &nbsp; (Espacio en blanco no separable, crea una celda vacía).
+    A, B, C, 1º, 2º (Texto en las celdas).
+Atributos:
+  table:
+    width="200" (Ancho de la tabla en píxeles).
+    summary="Datos correspondientes al ejercicio vencido" (Resumen de la tabla, útil para accesibilidad).
+  caption:
+    align="top" (Alineación del título, en la parte superior).
+  th:
+    scope="col" (Define que el encabezado es para una columna).
+    scope="row" (Define que el encabezado es para una fila).
