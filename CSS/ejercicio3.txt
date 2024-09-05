@@ -1,0 +1,40 @@
+1- Selector: p.quitar selecciona todos los elementos de tipo p (párrafos) que tengan la clase quitar.
+Declaración:
+  color: red; aplica el color rojo al texto de los párrafos con la clase quitar.
+Efecto: Los párrafos con la clase quitar tendrán su texto en color rojo.
+HTML afectado
+<p class="quitar">
+  Este párrafo debe ser quitado de la obra…
+  <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
+
+2-Selector: *.desarrollo selecciona cualquier elemento (*) que tenga la clase desarrollo, sin importar el tipo de etiqueta HTML.
+Declaración:
+  font-size: 8px; establece el tamaño de la fuente en 8 píxeles para los elementos con la clase desarrollo.
+Efecto: Los elementos con la clase desarrollo tendrán un tamaño de fuente pequeño (8px).
+HTML afectado
+<p class="desarrollo">
+  En este primer párrafo trataremos lo siguiente:
+  <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+
+3-Selector: .importante selecciona cualquier elemento que tenga la clase importante.
+Declaración:
+  font-size: 20px; establece un tamaño de fuente de 20 píxeles.
+Efecto: Los elementos con la clase importante tendrán un tamaño de fuente grande (20px).
+HTML afectado
+<p class="importante">
+  Y este es el párrafo más importante de la obra…
+  <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
+
+4-Este párrafo tiene dos clases: quitar y importante.
+Efecto combinado:
+  De la clase quitar: El texto será de color rojo.
+  De la clase importante: El tamaño de la fuente será 20px.
+El texto será grande (20px) y rojo.
+
+5- El encabezado h1 tiene la clase quitar, pero la regla CSS p.quitar solo aplica a párrafos (p). Entonces, no afectará al encabezado h1.
+Resultado: El encabezado no se verá afectado por las reglas CSS porque no existe una regla que seleccione h1.quitar.

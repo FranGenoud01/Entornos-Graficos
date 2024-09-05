@@ -1,0 +1,83 @@
+1- CSS (Cascading Style Sheets) es un lenguaje utilizado para describir la presentación y el diseño visual de un documento escrito en HTML o XML. Se usa para dar estilo a las páginas web, controlando cómo se ven los elementos como texto, imágenes, y diseño general (colores, fuentes, espaciados, márgenes, etc.).
+
+2- Las reglas en CSS están compuestas por un selector y una declaración. El selector indica a qué elementos HTML se aplicará el estilo, y la declaración define los estilos a aplicar. Una declaración contiene una propiedad (por ejemplo, color) y un valor (por ejemplo, red). Ejemplo de una regla CSS:
+p {
+  color: red;
+  font-size: 16px;
+}
+
+3- Estilos en línea (Inline styles): Se aplican directamente a un elemento HTML utilizando el atributo style. Ejemplo:
+<p style="color: blue;">Texto azul</p>
+
+Estilos internos (Internal styles): Se colocan dentro de una etiqueta <style> en la sección <head> del documento HTML.
+<style>
+  p {
+    color: green;
+  }
+</style>
+
+Estilos externos (External styles): Se definen en un archivo separado .css y se enlazan al documento HTML con la etiqueta <link>.
+<link rel="stylesheet" href="styles.css">
+
+4- Selector de tipo: Selecciona todos los elementos de un tipo específico (etiqueta HTML).
+p {
+  color: blue;
+}
+Aplica a todos los párrafos.
+
+Selector de clase: Selecciona elementos con una clase específica, indicada por un punto (.) seguido del nombre de la clase.
+.boton {
+  background-color: yellow;
+}
+Aplica a cualquier elemento con la clase boton.
+
+Selector de ID: Selecciona un único elemento con un ID específico, indicado por un # seguido del nombre del ID.
+#encabezado {
+  font-size: 24px;
+}
+Aplica al elemento con el ID encabezado.
+
+Selector universal: Selecciona todos los elementos del documento.
+* {
+  margin: 0;
+  padding: 0;
+}
+Elimina el margen y el relleno de todos los elementos.
+
+Selector de descendiente: Selecciona los elementos que son descendientes de otro elemento.
+div p {
+  color: red;
+}
+Aplica solo a los párrafos (p) que están dentro de un div.
+
+5- Una pseudo-clase es una palabra clave que se agrega a los selectores para definir un estado especial de un elemento. Las pseudo-clases más utilizadas aplicadas a vínculos (a) son:
+link: Aplica a los enlaces que aún no han sido visitados.
+a:link {
+  color: blue;
+}
+
+:visited: Aplica a los enlaces que ya han sido visitados.
+a:visited {
+  color: purple;
+}
+
+:hover: Aplica cuando el usuario pasa el ratón sobre el enlace.
+a:hover {
+  color: red;
+}
+
+:active: Aplica mientras el enlace está siendo clicado.
+a:active {
+  color: yellow;
+}
+
+6- La herencia en CSS se refiere a cómo ciertos estilos aplicados a un elemento padre pueden pasar a sus elementos hijos. Algunas propiedades, como color y font-family, son heredadas automáticamente por los hijos a menos que se especifiquen valores diferentes. Por ejemplo:
+body {
+  color: black;
+}
+Si no se especifica un color para los p, estos heredarán el color negro de body.
+
+7- El término "cascada" en CSS hace referencia a cómo los navegadores deciden qué reglas aplicar cuando hay múltiples reglas que afectan a un mismo elemento. El proceso de la cascada sigue estas prioridades:
+  Importancia: Las reglas marcadas con !important tienen la mayor prioridad.
+  Especificidad: Los selectores más específicos (como los ID) tienen prioridad sobre los más generales.
+  Orden: Si hay dos reglas con la misma especificidad, se aplica la que aparece más tarde en el código.

@@ -1,0 +1,37 @@
+1er ejemplo
+Párrafo (p con clase contenido y estilo inline):
+  Clase aplicada: .contenido hace que el tamaño del texto sea 14px y la fuente negrita.
+  Estilo inline: La regla style="font-weight: normal;" sobrescribe la propiedad font-weight: bold; de la clase contenido, haciendo que el texto NO esté en negrita.
+  Regla del párrafo: La regla general para párrafos (p) establece que el texto debería ser negro y tener fuente Arial o Helvetica con tamaño 10px, pero la clase contenido tiene mayor especificidad en cuanto al tamaño de la fuente, por lo que el tamaño será de 14px, pero el peso (font-weight) será normal debido al estilo inline.
+Resultado: El texto del párrafo será de tamaño 14px, con fuente Arial o Helvetica, color negro y no en negrita.
+
+Tabla y contenido de celdas (td):
+  La regla global * { color: green; } aplica color verde a todo el texto de la tabla porque no hay otra regla más específica para las celdas td.
+Resultado: El texto dentro de las celdas de la tabla será verde.
+
+Enlace (a):
+  Los enlaces tienen estilos específicos para diferentes estados.
+  Inicialmente, el enlace se mostrará en gris porque es un enlace no visitado (a:link {color: gray;}).
+  Si el enlace ya ha sido visitado, cambiará a azul (a:visited {color: blue;}).
+  Al pasar el mouse sobre el enlace, cambiará a fucsia (a:hover {color: fuchsia;}).
+  Cuando se haga clic en el enlace, su color será rojo (a:active {color: red;}).
+Resultado: El color del enlace dependerá de su estado (gris, azul, fucsia, o rojo).
+
+2do ejemplo
+Aplicación de la clase contenido al body:
+  Como la clase contenido se aplica al body, todos los elementos dentro del body (incluyendo los párrafos y las celdas de la tabla) heredarán las propiedades de la clase contenido.
+  Esto significa que el tamaño de la fuente será 14px y el texto será negrita (bold) para todos los elementos.
+
+Párrafo (p):
+  El párrafo no tiene ninguna clase específica aplicada, por lo que toma las propiedades generales del body (es decir, font-size: 14px y font-weight: bold debido a la clase contenido).
+  La regla general para los párrafos (p) especifica un tamaño de 10px, pero la clase contenido tiene mayor especificidad, por lo que el tamaño de la fuente será de 14px y el texto en negrita.
+Resultado: El texto del párrafo será de tamaño 14px, con fuente Arial o Helvetica, en negrita, y color negro.
+
+Tabla y contenido de celdas (td):
+  Como la clase contenido está aplicada al body, el tamaño de fuente de todo el contenido dentro de la tabla también será 14px y el texto será en negrita.
+  Sin embargo, el color de las celdas será verde debido a la regla global * { color: green; }.
+Resultado: El texto dentro de las celdas de la tabla será verde, de tamaño 14px y en negrita.
+
+Enlace (a):
+  Los enlaces tendrán los mismos estilos que en el primer código, con colores cambiando según su estado (gris, azul, fucsia o rojo).
+Resultado: El color del enlace dependerá de su estado (gris, azul, fucsia, o rojo), pero el tamaño de la fuente será 14px y el texto será en negrita debido a la herencia de la clase contenido aplicada al body.

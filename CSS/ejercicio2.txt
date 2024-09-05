@@ -1,0 +1,28 @@
+1- Selector: p#normal es un selector que apunta a un párrafo (p) con el ID normal.
+Declaraciones:
+  font-family: arial, helvetica; establece la fuente del texto como Arial o Helvetica (si Arial no está disponible).
+  font-size: 11px; define el tamaño del texto en 11 píxeles.
+  font-weight: bold; hace que el texto aparezca en negrita.
+Efecto: El párrafo con el ID normal será renderizado en Arial (o Helvetica como opción alternativa), con un tamaño de 11px y en negrita.
+HTML afectado
+<p id="normal">Este es un párrafo</p>
+
+2- Selector: *#destacado es un selector que apunta a cualquier elemento (*) con el ID destacado, sin importar el tipo de etiqueta (puede ser un párrafo, tabla, div, etc.).
+Declaraciones:
+  border-style: solid; establece un borde sólido alrededor del elemento.
+  border-color: blue; hace que el color del borde sea azul.
+  border-width: 2px; define un ancho de borde de 2 píxeles.
+Efecto: Cualquier elemento con el ID destacado tendrá un borde sólido de 2px de ancho y de color azul.
+HTML afectado
+<p id="destacado">Este es otro párrafo</p>
+<table id="destacado"><tr><td>Esta es una tabla</td></tr></table>
+
+3- Selector: #distinto selecciona cualquier elemento con el ID distinto, en este caso un párrafo.
+Declaraciones:
+  background-color: #9EC7EB; define el color de fondo como un azul claro (#9EC7EB).
+  color: red; establece el color del texto como rojo.
+Efecto: El párrafo con el ID distinto tendrá un fondo azul claro y texto de color rojo.
+HTML afectado
+<p id="distinto">Este es el último párrafo</p>
+
+4- 
