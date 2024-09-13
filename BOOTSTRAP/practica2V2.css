@@ -1,0 +1,103 @@
+/* Estilos generales */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.full-height-container {
+  min-height: 100vh;
+  /* Ocupa toda la altura de la ventana */
+  display: flex;
+  flex-direction: column;
+}
+
+.content-area {
+  flex-grow: 1;
+  display: flex;
+}
+
+.sidebar {
+  background-color: #ffe0b2;
+  /* Melocotón */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  /* Abarca toda la altura */
+}
+
+.header {
+  background-color: #b39ddb;
+  /* Púrpura */
+  height: 100px;
+  text-align: center;
+}
+
+.green-box {
+  background-color: #a5d6a7;
+  /* Verde */
+  height: 100px;
+  text-align: center;
+}
+
+.small-box {
+  background-color: #b0bec5;
+  /* Gris oscuro */
+  height: 100px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.large-box {
+  background-color: #90caf9;
+  /* Azul claro */
+  height: 200px;
+  text-align: center;
+}
+
+/* Separación entre cajas */
+.row>div {
+  padding: 10px;
+  /* Añadimos padding a cada columna para que se vea espacio entre cajas */
+}
+
+.small-box,
+.green-box,
+.large-box,
+.header,
+.sidebar {
+  border-radius: 5px;
+  border: 2px solid white;
+  /* Bordes blancos para mejor diferenciación */
+}
+
+/* Ajustar imágenes del carrusel */
+.carousel-item img {
+  width: 100%;
+  /* Asegura que la imagen cubra el ancho del contenedor */
+  height: 100%;
+  /* Asegura que la imagen cubra la altura del contenedor */
+  object-fit: cover;
+  /* Asegura que la imagen mantenga su proporción sin distorsionar */
+}
+
+/* Ajustar imágenes de las tarjetas (cards) */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  /* Ajusta la altura según el diseño */
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* Blue large box with carousel (slider) */
+.large-box {
+  background-color: #90caf9;
+  height: 300px;
+  /* Ajusta la altura según el diseño */
+  text-align: center;
+  overflow: hidden;
+  /* Asegura que el contenido no se desborde del contenedor */
+}
